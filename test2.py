@@ -1,12 +1,12 @@
 from tkinter import *
-from random import randint
+import random
 
 
 def raf_3():
-    x = randint(1, 3)
-    if x == '1':
+    x =  int(random.randint(1, 3))
+    if x == 1:
         num_1()
-    elif x == '2':
+    elif x == 2:
         num_2()
     else:
         num_3()
