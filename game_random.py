@@ -1,13 +1,14 @@
 from tkinter import  *
-from numpy import *
 from random import randint
 from tkinter import messagebox
+n = 'Тебе не повезет'
+m = 'Тебе повезет'
 def num_1():
-    x = randint(1,20)
-    if x == '3':
-        messagebox.showinfo('Сегодня, тебе повезет')
+    x = randint(1, 10)
+    if x == '2':
+        messagebox.showinfo('Результат', m)
     else:
-        messagebox.showinfo('Сегодня, тебе не повезет')
+        messagebox.showinfo('Результат', n)
 root = Tk()
 root.title('Приложение')
 root.geometry("800x450")
